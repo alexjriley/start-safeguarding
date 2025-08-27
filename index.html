@@ -50,23 +50,30 @@
     <!-- Header -->
 
     <header class="p-4 my-2 bg-light rounded-3">
-        <div class="container-fluid">
+        <div class="container">
             <h1 class="display-5">Start Safeguarding</h1>
             <p class="col-md-8 lead">Protecting individuals from harm, abuse, and neglect in all settings..</p>
         </div>
     </header>
 
     <!-- About -->
-
-    <div class="container text-center">
+     <section id="about" class="container section">
+        <div class="container align-start">
   <div class="row">
-    <div class="col">
-      1 of 2
+    <!-- Card and button -->
+    <div class="col-12 col-md-8 xl-8">
+      <h2 class="display-6">What is safeguarding?</h2>
+      <p>Safeguarding is the protection of children, young people, and vulnerable adults from abuse, neglect, and harm. It's about creating safe environments where everyone can thrive and reach their full potential.
+        Our commitment to safeguarding means ensuring that all individuals are protected from any form of abuse, whether physical, emotional, or psychological.</p>
+        <button type="button" class="btn btn-primary">Primary</button>
     </div>
-    <div class="col">
-      2 of 2
+    <!-- Image -->
+    <div class="col-12 col-md-4 xl-4">
+      <img src="assets/images/safeguarding_expert.D6B01XgR_1q1e0F.webp" class="card-img-top"
+                            alt="Safeguarding expert holds a tablet">
     </div>
   </div>
+     </section>
 
     <!-- Content Section -->
 
@@ -79,7 +86,7 @@
                 <div class="col-12 col-md-4 col-xl-4">
                     <div class="card">
                         <img src="assets/images/safeguarding_group-discussion-at-work.BQFQXWtV_1Pyyjv.webp" class="card-img-top"
-                            alt="#">
+                            alt="Employees meet around a table">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Emotional Withdrawal</h3>
                             <p class="card-text">
@@ -91,7 +98,7 @@
                 <div class="col-12 col-md-4 col-xl-4">
                     <div class="card">
                         <img src="assets/images/safeguarding_at-work.c4MsPLNt_Z2h8zRG.webp" class="card-img-top"
-                            alt="#" >
+                            alt="Employees stand at a meeting adding notes to a sheet of paper" >
                         <div class="card-body">
                             <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title sub-heading-color">Physical Signs</h3>
@@ -103,7 +110,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-xl-4">
                     <div class="card">
-                        <img src="assets/images/safeguarding_elderly.SNanMTRp_Z24YsHs.webp" class="card-img-top" alt="#">
+                        <img src="assets/images/safeguarding_elderly.SNanMTRp_Z24YsHs.webp" class="card-img-top" alt="A woman helps an elderly man">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Behavioral Changes</h3>
                             <p class="card-text">
@@ -141,6 +148,27 @@
     <!-- Responsive Footer / contact section -->
      <!-- mt-auto needed to push footer to the bottom of the page -->
 
+    <section id="contact" class="container section">
+        <div class="container">
+            <h2 class="display-6">Want to speak to us about an issue?</h2>
+            <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </div>
+    </section>
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
