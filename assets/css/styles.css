@@ -3,25 +3,68 @@
 
 /* CSS Variables */
 :root {
-    --primary-font: "Quicksand", sans-serif;
+    --primary-font: "Quicksand";
     --secondary-font: "Nunito";
     --primary-color: #6A5ACD; /* Purple */
+    --secondary-color: #2a2a2a; /* Black */
     --accent-color: #FF6F61; /* Coral */
     --background-color: #F2F2F2; /* Mist Grey */
     --button-color: #2ECC71; /* Emerald Green */
 }
 
-/* General styles */
+/* Global styles */
+
+body {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-family: var(--primary-font);
+    color: var(--primary-color)
+}
+
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+}
 
 /* Header */
 
-/* Navbar styles */
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
+    top: 100%;
+}
 
 /* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 
 /* Main content */
 
 /* Hero section */
+
+/* About section */
+
+#about {
+    margin: auto;
+}
 
 /* Form */
 
