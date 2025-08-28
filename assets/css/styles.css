@@ -28,10 +28,6 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--secondary-color);
-}
-
-h2,
-h3 {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -51,8 +47,8 @@ img {
 }
 
 .my-btn {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
     border-radius: 0;
     margin: 0px 20px 20px 0px;
 }
@@ -118,7 +114,6 @@ nav {
 /* About section */
 
 #about {
-    margin: auto;
     max-width: 100%;
 }
 
@@ -162,6 +157,9 @@ nav {
     #signs .card-body {
         min-height: 300px;
     }
+        #about .main-img {
+        flex-direction: column;
+    }
 }
     
 /* Media query: tablets and larger (768px and up) */
@@ -170,6 +168,9 @@ nav {
     #signs .card-body {
         min-height: 200px;
     }
+    #about p {
+    text-size-adjust: auto;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -177,5 +178,14 @@ nav {
 @media screen and (min-width: 992px) {
     #signs .card-body {
         min-height: 200px;
+    }
+    
+    #about p {
+        text-size-adjust: auto;
+    }
+
+    #about .main-img {
+        max-width: 300px;
+        max-height: auto;
     }
 }
