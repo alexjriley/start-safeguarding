@@ -82,7 +82,7 @@ main {
 /* Hero section */
 
 #hero {
-    background: url(../images/people-2557396_1280.jpg) no-repeat center center/cover;
+    background: url(../images/hero-image-office-resized.jpg) no-repeat center center/cover;
     height: 400px;
     width: 100%;
     position: relative;
@@ -93,7 +93,7 @@ main {
     padding: 15px;
     left: 30px;
     bottom: 30px;
-    width: 60%;
+    width: 50%;
     background-color: rgba(195, 190, 190, 0.9);
 }
 
