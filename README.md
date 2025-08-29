@@ -1,7 +1,5 @@
 # start-safeguarding
 
-# PROJECT NAME TO GO HERE
-
 A simple, responsive, single-page website providing guidance on recognizing safeguarding signs and taking action. Built with HTML, CSS, and Bootstrap, this site raises awareness and encourages reporting.
 
 Add a link to the live site here (https://alexjriley.github.io/start-safeguarding), for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
