@@ -38,6 +38,7 @@ h3 {
 
 main {
     margin: auto;
+    background-color: var(--background-color);
 }
 
 .section {
@@ -125,12 +126,6 @@ main {
 
 #signs {
     background-color: var(--background-color);
-    max-width: 95%;
-}
-
-#signs .card-body {
-    min-height: 150px;
-    max-height: fit-content;
 }
 
 #signs .sub-heading {
@@ -138,7 +133,16 @@ main {
     color: var(--secondary-color);
 }
 
+#signs .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  text-align: center;
+}
 
+#signs .card-body .btn {
+  align-self: center;
+}
 
 
 /* Take Action */
@@ -146,15 +150,12 @@ main {
 #action {
     margin: auto;
     text-align: center;
-    max-width: 95%;
 }
 
 /* Footer */
 
 #contact {
-    background-color: var(--background-color);
     text-align: center;
-    max-width: 95%;
 }
 
 /* Media query: smaller devices (up to 300px) */
@@ -178,11 +179,8 @@ main {
     #hero-text h1 {
     font-size: 2rem; /* ~32px */ 
     }
-
-    #signs .card-body {
-        min-height: 100px;
-    }
-        #about .main-img {
+    
+    #about .main-img {
         flex-direction: column;
     }
 }
@@ -196,9 +194,6 @@ main {
     #hero-text h1 {
     font-size: 2.5rem; /* ~40px */
     }
-    #signs .card-body {
-        min-height: 200px;
-    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -210,10 +205,6 @@ main {
     
     #hero-text h1 {
     font-size: 3rem; /* ~48px */
-    }
-
-    #signs .card-body {
-        max-height: 100px;
     }
     
     #about p {
