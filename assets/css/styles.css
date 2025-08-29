@@ -20,6 +20,7 @@ html {
 
 body {
     font-family: var(--secondary-font);
+    font-size: 1rem;
     color: var(--secondary-color);
 }
 
@@ -175,12 +176,6 @@ main {
     #signs .card-body {
         min-height: 200px;
     }
-    #about p {
-    text-size-adjust: auto;
-    }
-    #about .main-img {
-    flex-direction: column;
-    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -195,7 +190,7 @@ main {
     }
     
     #about p {
-        text-size-adjust: auto;
+        font-size: 1.1rem;
     }
 
     #about .main-img {
