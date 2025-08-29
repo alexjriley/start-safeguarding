@@ -61,33 +61,22 @@ img {
 /* Header */
 
 /* Navbar styles with dropdown toggle */
-nav {
-    position: absolute;
+
+.navbar {
     background-color: var(--primary-color);
-    height: 75px;
-    width: 100%;
-    right: 0;
-    padding: 0 1rem;
-    display: none;
-    top: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-
-/* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
+.logo {
+    align-items: start;
+    max-height: 50px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }
 
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
-.nav .dropdown-menu {
-  z-index: 2000; /* higher than navbar background */
+.collapse {
+    padding-left: 25px;
 }
 
 
@@ -150,6 +139,8 @@ nav {
     text-align: center;
     max-width: 95%;
 }
+
+/* Media query: smaller devices (up to 395px) */
 
 /* Media query: large or landscape phones (576px and up) */
 
