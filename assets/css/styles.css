@@ -52,6 +52,12 @@ main {
     border-radius: 0;
 }
 
+.my-btn:hover {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: #fafafa;
+}
+
 .main-img {
     border-radius: 0;
 }
@@ -82,7 +88,7 @@ main {
 /* Hero section */
 
 #hero {
-    background: url(../images/hero-2-large.jpg) no-repeat center center/cover;
+    background: url(../images/hero-2-large.webp) no-repeat center center/cover;
     height: 400px;
     width: 100%;
     position: relative;
@@ -120,7 +126,6 @@ main {
 }
 
 #signs .card-body {
-    min-width: none;
     min-height: 150px;
     max-height: fit-content;
 }
@@ -149,13 +154,20 @@ main {
     max-width: 95%;
 }
 
-/* Media query: smaller devices (up to 395px) */
+/* Media query: smaller devices (up to 344px) */
+
+@media screen and (min-width: 344px) {
+    #hero {
+        background: url(../images/hero-2-small.webp) no-repeat center center/cover;
+    }
+
+}
 
 /* Media query: large or landscape phones (576px and up) */
 
-@media screen and (max-width: ≥576px) {
+@media screen and (min-width: 576px) {
     #hero {
-        background: url(../images/hero-2-small) no-repeat center center/cover;
+        background: url(../images/hero-2-small.webp) no-repeat center center/cover;
     }
 
     #signs .card-body {
@@ -170,7 +182,7 @@ main {
 
 @media screen and (min-width: 768px) {
     #hero {
-        background: url(../images/hero-2-m.jpg) no-repeat center center/cover;
+        background: url(../images/hero-2-medium.webp) no-repeat center center/cover;
     }
     
     #signs .card-body {
@@ -182,7 +194,7 @@ main {
 
 @media screen and (min-width: 992px) {
     #hero {
-        background: url(../images/hero-2-large.jpg) no-repeat center center/cover;
+        background: url(../images/hero-2-large.webp) no-repeat center center/cover;
     }
 
     #signs .card-body {
@@ -195,6 +207,5 @@ main {
 
     #about .main-img {
         max-width: 400px;
-        max-height: auto;
     }
 }
