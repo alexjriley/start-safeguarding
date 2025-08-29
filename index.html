@@ -59,16 +59,24 @@
     <!-- About -->
      <section id="about" class="container section">
         <header><h2>What is safeguarding?</h2></header>
-      <div class="container align-start">
+      <div class="d-flex align-items-start">
         <div class="row">
-          <div class="col-12 col-md-8 xl-6">
+          <div class="col-12 col-md-8 col-xl-8">
             <p>Safeguarding is the protection of children, young people, and vulnerable adults from abuse, neglect, and harm. 
               It's about creating safe environments where everyone can thrive and reach their full potential.</p>
             <p>Our commitment to safeguarding means ensuring that all individuals are protected from any form of abuse, whether physical, emotional, or psychological.</p>
     </div>
-    <div class="col-12 col-md-4 xl-6">
-      <img src="assets/images/person-sad-beach-resized.jpg" class="card-img-top main-img"
+    <div class="col-12 col-md-4 col-xl-4">
+    <picture>
+    
+    <!-- Tablets -->
+    <source media="(min-width: 768px)" srcset="../assets/images/person-sad-beach-m.webp">
+    
+    <!-- Default / Mobile fallback -->
+    <img src="../assets/images/person-sad-beach-s.webp" class="card-img-top main-img img-fluid""
                             alt="Person sitting next to a beach">
+  </picture>
+      
     </div>
   </div>
         </div>
@@ -82,8 +90,15 @@
                 </div>
                 <div class="col-12 col-md-4 col-xl-4">
                     <div class="card">
-                        <img src="assets/images/child-drawing-resized.jpg" class="img-fluid card-img-top"
-                            alt="Children's drawing with crayons">
+                        <picture>
+                            <!-- Large devices -->
+                             <source media="(min-width: 992px)" srcset="../assets/images/child-drawing-large.webp">
+                            <!-- Tablets -->
+                             <source media="(min-width: 768px)" srcset="../assets/images/child-drawing-m.webp">
+                             <!-- Default / Mobile fallback -->
+                              <img src="assets/images/child-drawing-s.webp" class="img-fluid card-img-top"
+                              alt="Children's drawing with crayons">
+                            </picture>
                         <div class="card-body">
                             <h3 class="card-title">Emotional Withdrawal</h3>
                             <p class="card-text">
@@ -94,10 +109,16 @@
                 </div>
                 <div class="col-12 col-md-4 col-xl-4">
                     <div class="card">
-                        <img src="assets/images/office-meeting-resized.jpg" class="img-fluid card-img-top"
+                        <picture>
+                            <!-- Large devices -->
+                             <source media="(min-width: 992px)" srcset="../assets/images/office-meeting-large.webp">
+                            <!-- Tablets -->
+                             <source media="(min-width: 768px)" srcset="../assets/images/office-meeting-m.webp">
+                             <!-- Default / Mobile fallback -->
+                              <img src="assets/images/office-meeting-s.webp" class="img-fluid card-img-top"
                             alt="Employees meeting in an office" >
+                            </picture>
                         <div class="card-body">
-                            <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title">Physical Signs</h3>
                             <p class="card-text">
                                 Unexplained injuries, changes in appearance, or signs of neglect.
@@ -107,14 +128,23 @@
                 </div>
                 <div class="col-12 col-md-4 col-xl-4">
                     <div class="card">
-                        <img src="assets/images/child-pen-drawing-resized.jpg" class="img-fluid card-img-top" alt="Child drawing with felt-tip pen">
+                        <picture>
+                            <!-- Large devices -->
+                             <source media="(min-width: 992px)" srcset="../assets/images/child-drawing-s.webp">
+                            <!-- Tablets -->
+                             <source media="(min-width: 768px)" srcset="../assets/images/child-drawing-m.webp">
+                             <!-- Default / Mobile fallback -->
+                              <img src="../assets/images/child-pen-drawing-s.webp" class="img-fluid card-img-top"
+                            alt="Child drawing with felt-tip pene" >
+                            </picture>
                         <div class="card-body">
                             <h3 class="card-title">Behavioural Changes</h3>
                             <p class="card-text">
-                                Changes in eating or sleeping patterns, anxiety, or fear of certain situations. 
+                                Changes in eating or sleeping patterns, anxiety, or fear of certain situations.
                             </p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -163,10 +193,6 @@
   
   <button type="submit" class="btn btn-primary my-btn">Submit</button>
 </form>
-
-<div>
-    <p><em>Designed by alexjriley</em><br><strong>2025</strong></p>
-</div>
 
         </div>
     </section>

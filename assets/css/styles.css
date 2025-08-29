@@ -49,7 +49,6 @@ main {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     border-radius: 0;
-    margin: 0px 20px 20px 0px;
 }
 
 .main-img {
@@ -103,6 +102,8 @@ main {
 
 #about {
     max-width: 100%;
+    margin: auto;
+    padding: 50px;
 }
 
 #about > header{
@@ -128,11 +129,8 @@ main {
     color: var(--secondary-color);
 }
 
-#signs .card-img-top {
-    height: 200px;
-    width: auto;
-    object-fit: cover;
-}
+
+
 
 /* Take Action */
 
@@ -158,6 +156,7 @@ main {
     #hero {
         background: url(../images/hero-2-small) no-repeat center center/cover;
     }
+
     #signs .card-body {
         min-height: 100px;
     }
@@ -179,6 +178,9 @@ main {
     #about p {
     text-size-adjust: auto;
     }
+    #about .main-img {
+    flex-direction: column;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -189,7 +191,7 @@ main {
     }
 
     #signs .card-body {
-        max-height: 200px;
+        max-height: 100px;
     }
     
     #about p {
@@ -197,7 +199,7 @@ main {
     }
 
     #about .main-img {
-        max-width: 300px;
+        max-width: 400px;
         max-height: auto;
     }
 }
