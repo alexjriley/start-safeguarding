@@ -95,7 +95,7 @@ main {
 
 #hero-text {
     position: absolute;
-    padding: 15px;
+    padding: 10px;
     left: 30px;
     bottom: 30px;
     width: 55%;
@@ -153,13 +153,15 @@ main {
     max-width: 95%;
 }
 
-/* Media query: smaller devices (up to 344px) */
+/* Media query: smaller devices (up to 300px) */
 
-@media screen and (min-width: 344px) {
+@media screen and (min-width: 300px) {
     #hero {
         background: url(../images/hero-2-small.webp) no-repeat center center/cover;
     }
-
+    #hero-text h1 {
+        font-size-adjust: 0.5;
+    }
 }
 
 /* Media query: large or landscape phones (576px and up) */
@@ -168,7 +170,9 @@ main {
     #hero {
         background: url(../images/hero-2-small.webp) no-repeat center center/cover;
     }
-
+    #hero-text h1 p {
+        font-size-adjust: 0.6;
+    }
     #signs .card-body {
         min-height: 100px;
     }
@@ -183,7 +187,9 @@ main {
     #hero {
         background: url(../images/hero-2-medium.webp) no-repeat center center/cover;
     }
-    
+    #hero-text h1 {
+    font-size-adjust: 0.6;
+    }
     #signs .card-body {
         min-height: 200px;
     }
