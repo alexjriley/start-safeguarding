@@ -128,6 +128,12 @@ Chat GPT: AI assistance
 Chrome: Developer tools and Lighthouse report
 Trello: Project plan
 
+### AI use
+
+I ran out of my free trial for Co-pilot assistant in VS Code. However used Chat GPT for troubleshooting advice.
+
+I also used Chat GPT to suggest fonts and enerate the logo, design theme, user stories and safeguarding content to save time researching and designing.
+
 ### Deployment
 
 **https://alexjriley.github.io/start-safeguarding/**
