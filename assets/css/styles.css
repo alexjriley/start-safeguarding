@@ -82,7 +82,7 @@ main {
 /* Hero section */
 
 #hero {
-    background: url(../images/hero-image-office-resized.jpg) no-repeat center center/cover;
+    background: url(../images/hero-2-large.jpg) no-repeat center center/cover;
     height: 400px;
     width: 100%;
     position: relative;
@@ -93,7 +93,7 @@ main {
     padding: 15px;
     left: 30px;
     bottom: 30px;
-    width: 50%;
+    width: 55%;
     background-color: rgba(195, 190, 190, 0.9);
 }
 
@@ -154,9 +154,12 @@ main {
 
 /* Media query: large or landscape phones (576px and up) */
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: ≥576px) {
+    #hero {
+        background: url(../images/hero-2-small) no-repeat center center/cover;
+    }
     #signs .card-body {
-        min-height: 300px;
+        min-height: 100px;
     }
         #about .main-img {
         flex-direction: column;
@@ -166,6 +169,10 @@ main {
 /* Media query: tablets and larger (768px and up) */
 
 @media screen and (min-width: 768px) {
+    #hero {
+        background: url(../images/hero-2-m.jpg) no-repeat center center/cover;
+    }
+    
     #signs .card-body {
         min-height: 200px;
     }
@@ -177,8 +184,12 @@ main {
 /* Large devices (laptops and desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
+    #hero {
+        background: url(../images/hero-2-large.jpg) no-repeat center center/cover;
+    }
+
     #signs .card-body {
-        min-height: 200px;
+        max-height: 200px;
     }
     
     #about p {
